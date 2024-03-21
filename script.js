@@ -64,14 +64,20 @@ function resultMale() {
 	}
 }
 
+console.log();
+
 btn.addEventListener("click", () => {
 	if (birthYear.value) {
-		if (male.checked) {
-			resultMale();
-		} else if (female.checked) {
-			resultFemale();
+		if (birthYear.value > year) {
+			alert("Insira um ano válido");
 		} else {
-			alert("Insira um sexo");
+			if (male.checked) {
+				resultMale();
+			} else if (female.checked) {
+				resultFemale();
+			} else {
+				alert("Insira um sexo");
+			}
 		}
 	} else {
 		alert("Insira seu ano de nascimento");
