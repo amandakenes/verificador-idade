@@ -35,7 +35,7 @@ function elderFemale() {
 }
 
 function youngMale() {
-	result.innerHTML = `Identificamos um homem novo de ${age} anos`;
+	result.innerHTML = `Identificamos um homem de ${age} anos`;
 	imageResult.src = imgs.youngMale;
 	result.appendChild(imageResult);
 }
