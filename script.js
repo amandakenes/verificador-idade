@@ -104,8 +104,6 @@ function resultMale() {
   }
 }
 
-console.log();
-
 btn.addEventListener("click", () => {
   if (birthYear.value) {
     if (birthYear.value > year) {
